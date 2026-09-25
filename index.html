@@ -1,353 +1,51 @@
-<!DOCTYPE html><html class="dark scroll-smooth" lang="es" style=""><head>
+<!doctype html>
+<html lang="es">
+<head>
 <meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>NEXO Fight Club | Boxeo en Buenos Aires</title>
-<meta content="Escuela de boxeo técnico en Buenos Aires. Boxeo en serio, desde cero o para competir. Técnica, preparación física y una escuela que respeta el oficio." name="description">
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&amp;family=Hanken+Grotesk:wght@400;500;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#ffb3b1",
-                        "surface-container": "#1A1A1A",
-                        "surface": "#131313",
-                        "background": "#131313",
-                        "surface-container-highest": "#353534",
-                        "secondary": "#c6c6c7",
-                        "on-surface": "#e5e2e1",
-                        "on-background": "#e5e2e1",
-                        "combat-red": "#E63946"
-                    },
-                    fontFamily: {
-                        "body-lg": ["Hanken Grotesk"],
-                        "headline-lg": ["Barlow Condensed"],
-                        "body-md": ["Hanken Grotesk"],
-                        "headline-md": ["Barlow Condensed"],
-                        "label-numeric": ["JetBrains Mono"],
-                        "display-xl": ["Barlow Condensed"],
-                        "technical-mono": ["JetBrains Mono"],
-                        "headline-lg-mobile": ["Barlow Condensed"]
-                    }
-                }
-            }
-        }
-    </script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111110">
+<meta name="description" content="NEXO Fight Club: concepto de experiencia digital para una escuela de boxeo. Un proyecto de diseño UX/UI y dirección visual.">
+<title>NEXO Fight Club — Boxeo con método</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-        .bg-texture {
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
-            background-repeat: repeat;
-            pointer-events: none;
-            position: fixed;
-            inset: 0;
-            z-index: 50;
-            opacity: 0.15;
-        }
-        .industrial-border { border: 2px solid #C6C6C7; }
-        .raw-border { border: 2px solid #E63946; }
-        .gritty-hover:hover {
-            background-color: #e5e2e1;
-            color: #131313;
-        }
-    </style>
+:root{color-scheme:dark;--ink:#111110;--panel:#1d1d1b;--paper:#f2f0e9;--muted:#b9b7b0;--red:#ee3d38;--line:#585854}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--ink);color:var(--paper);font:16px/1.55 "DM Sans",Arial,sans-serif}a{color:inherit}button{font:inherit}img{display:block;width:100%;height:100%;object-fit:cover}::selection{background:var(--red);color:white}
+.skip{position:absolute;top:-100px;left:12px;z-index:200;background:white;color:#111;padding:12px}.skip:focus{top:12px}
+.wrap{width:min(100% - 48px,1320px);margin:auto}.eyebrow{font:700 13px/1.2 "DM Sans",sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--red)}.display,.section-title,h2,h3,.brand,.nav a,.button,.stat strong{font-family:"Barlow Condensed",Impact,sans-serif;text-transform:uppercase;line-height:.91}.section-title{font-size:clamp(3.5rem,8vw,8rem);letter-spacing:-.02em;margin:0}.section-intro{max-width:620px;color:var(--muted);font-size:clamp(1rem,1.6vw,1.25rem)}.button{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:12px 25px;background:var(--red);border:2px solid var(--red);color:white;text-decoration:none;font-size:1.25rem;font-weight:800;letter-spacing:.035em;transition:background .2s,color .2s,transform .2s}.button:hover{background:white;border-color:white;color:var(--ink);transform:translateY(-2px)}.button.secondary{background:transparent;border-color:var(--paper)}.button.secondary:hover{background:var(--paper)}:focus-visible{outline:3px solid #fff;outline-offset:4px}
+header{position:sticky;top:0;z-index:100;background:rgba(17,17,16,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}.head{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{text-decoration:none;font-size:1.8rem;font-weight:900;letter-spacing:-.025em;white-space:nowrap}.brand b{color:var(--red)}.nav{display:flex;align-items:center;gap:32px}.nav a{font-size:1.2rem;font-weight:700;text-decoration:none}.nav a:hover{color:var(--red)}.nav .nav-action{color:var(--red)}.menu-toggle{display:none;background:none;color:white;border:1px solid var(--line);padding:8px 12px;cursor:pointer}
+.demo{background:#262621;color:#ddd9cd;font-size:.75rem;letter-spacing:.06em;text-align:center;padding:9px 20px;border-bottom:1px solid #444}.demo strong{color:white}
+.hero{min-height:min(850px,calc(100svh - 112px));position:relative;display:flex;align-items:end;overflow:hidden;border-bottom:1px solid var(--line)}.hero-image{position:absolute;inset:0}.hero-image img{filter:grayscale(1) contrast(1.16);object-position:50% 44%}.hero-image:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,17,16,.84),rgba(17,17,16,.14) 72%),linear-gradient(0deg,#111110 0%,transparent 65%)}.hero-content{position:relative;padding:120px 0 88px}.hero .eyebrow{color:#ff6860}.display{font-size:clamp(5rem,13.5vw,13.5rem);letter-spacing:-.045em;margin:18px 0 24px;font-weight:900;max-width:1100px}.display em{font-style:normal;color:var(--red)}.hero-copy{font-size:clamp(1.1rem,2vw,1.45rem);max-width:550px;margin:0 0 36px}.actions{display:flex;gap:12px;flex-wrap:wrap}.hero-bottom{display:flex;gap:18px;align-items:center;color:#d7d4cb;margin-top:72px;text-transform:uppercase;font-size:.73rem;letter-spacing:.18em}.hero-bottom:before{content:"";width:48px;height:2px;background:var(--red)}
+.section{padding:clamp(80px,10vw,150px) 0;border-bottom:1px solid var(--line)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:32px;margin-bottom:50px}.section-head .section-intro{margin:0 0 7px}.number{color:var(--red);font:700 14px "DM Sans",sans-serif;letter-spacing:.16em;display:block;margin-bottom:20px}
+.paths{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);border:1px solid var(--line)}.path{background:var(--panel);padding:clamp(25px,3vw,48px);min-height:360px;display:flex;flex-direction:column}.path:hover{background:#292925}.path-index{color:var(--red);font-size:.85rem;letter-spacing:.12em}.path h3{font-size:clamp(2.8rem,4vw,4.8rem);margin:auto 0 16px}.path p{color:var(--muted);margin:0}.path .tag{display:block;margin-top:26px;padding-top:14px;border-top:1px solid var(--line);text-transform:uppercase;font-size:.72rem;letter-spacing:.13em}
+.method{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,100px);align-items:center}.method-image{height:620px;position:relative}.method-image img{filter:grayscale(1);object-position:center}.method-image:after{content:"";position:absolute;inset:0;border:12px solid transparent;border-left-color:var(--red);pointer-events:none}.method-copy .section-title{margin-bottom:28px}.method-copy>p{color:var(--muted);max-width:560px}.steps{margin-top:40px}.step{display:grid;grid-template-columns:58px 1fr;gap:16px;padding:19px 0;border-top:1px solid var(--line)}.step span{color:var(--red);font-weight:700}.step h3{font-size:1.8rem;margin:0 0 5px}.step p{margin:0;color:var(--muted);font-size:.94rem}
+.statement{background:var(--red);color:#151513;overflow:hidden}.statement .wrap{padding:clamp(70px,8vw,125px) 0}.statement p{font:900 clamp(4rem,11vw,11rem)/.88 "Barlow Condensed",Impact,sans-serif;text-transform:uppercase;letter-spacing:-.03em;margin:0;max-width:1150px}.statement span{color:white}
+.experience{display:grid;grid-template-columns:1.15fr .85fr;gap:24px}.experience-photo{height:550px}.experience-photo img{filter:grayscale(1)}.experience-copy{background:var(--panel);padding:clamp(30px,5vw,75px);display:flex;flex-direction:column;justify-content:center}.experience-copy h3{font-size:clamp(3.5rem,6vw,6.5rem);margin:0 0 22px}.experience-copy p{color:var(--muted);max-width:420px}.experience-copy ul{padding:0;list-style:none;margin:24px 0 0}.experience-copy li{border-top:1px solid var(--line);padding:13px 0}.experience-copy li:before{content:"+";color:var(--red);font-weight:700;margin-right:14px}
+.faq{max-width:940px;margin:0 auto}.faq .section-title{margin-bottom:35px}.faq details{border-top:1px solid var(--line);padding:23px 0}.faq details:last-child{border-bottom:1px solid var(--line)}.faq summary{cursor:pointer;font:700 1.8rem "Barlow Condensed",Impact,sans-serif;text-transform:uppercase;list-style:none;display:flex;justify-content:space-between;gap:16px}.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:"+";color:var(--red)}.faq details[open] summary:after{content:"−"}.faq details p{color:var(--muted);max-width:710px;margin:13px 0 0}
+.end{background:var(--paper);color:var(--ink);padding:clamp(85px,10vw,150px) 0}.end .section-title{max-width:1000px;margin:20px 0 25px}.end p{font-size:1.2rem;max-width:610px;margin:0 0 36px}.end .button:hover{background:#111;color:#fff;border-color:#111}.end .eyebrow{color:#b62020}
+footer{padding:44px 0;color:var(--muted)}footer .wrap{display:flex;justify-content:space-between;gap:24px;align-items:center}footer a:hover{color:white}footer p{margin:0;font-size:.84rem}
+@media(max-width:850px){.wrap{width:min(100% - 32px,1320px)}.head{height:68px}.menu-toggle{display:block}.nav{display:none;position:absolute;left:0;right:0;top:68px;background:var(--ink);padding:16px;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}.nav.open{display:flex}.nav a{padding:13px 6px;border-bottom:1px solid var(--line)}.hero{min-height:680px}.hero-image:after{background:linear-gradient(0deg,#111 0%,rgba(17,17,16,.2) 100%)}.hero-content{padding:95px 0 60px}.display{font-size:clamp(5rem,18vw,9rem)}.hero-bottom{margin-top:55px}.paths{grid-template-columns:1fr}.path{min-height:265px}.path h3{margin:35px 0 12px}.method{grid-template-columns:1fr}.method-image{height:440px;order:2}.experience{grid-template-columns:1fr}.experience-photo{height:390px}.section-head{display:block}.section-head .section-intro{margin-top:20px}footer .wrap{align-items:start;flex-direction:column}}
+@media(max-width:480px){.brand{font-size:1.55rem}.display{font-size:clamp(4.4rem,18vw,6.5rem)}.hero{min-height:650px}.actions{flex-direction:column}.actions .button{width:100%}.hero-copy{font-size:1.05rem}.section-title{font-size:clamp(3.7rem,16vw,5rem)}.method-image{height:340px}.experience-photo{height:300px}.statement p{font-size:clamp(4rem,15vw,6rem)}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
+</style>
 </head>
-<body class="bg-background text-on-surface font-body-md overflow-x-hidden antialiased selection:bg-combat-red selection:text-white">
-<div class="bg-texture"></div>
-<!-- TopNavBar -->
-<header class="bg-background/95 backdrop-blur-sm fixed top-0 w-full z-50 border-b border-[#353534] flex justify-between items-center px-4 md:px-12 h-20 max-w-full">
-<div class="font-headline-md text-2xl font-black tracking-tighter text-on-background uppercase">
-            NEXO FIGHT CLUB
-        </div>
-<nav class="hidden md:flex gap-8 h-full items-center">
-<a class="text-secondary font-headline-md hover:text-combat-red transition-colors duration-200 cursor-pointer uppercase text-2xl font-bold tracking-tighter h-full flex items-center border-b-2 border-transparent hover:border-combat-red" href="#metodo">MÉTODO</a>
-<a class="text-secondary font-headline-md hover:text-combat-red transition-colors duration-200 cursor-pointer uppercase text-2xl font-bold tracking-tighter h-full flex items-center border-b-2 border-transparent hover:border-combat-red" href="#horarios">HORARIOS</a>
-<a class="text-secondary font-headline-md hover:text-primary transition-colors duration-200 cursor-pointer uppercase text-2xl font-bold tracking-tighter h-full flex items-center border-b-2 border-transparent hover:border-primary" href="#escuela">ESCUELA</a>
-<a class="text-secondary font-headline-md hover:text-primary transition-colors duration-200 cursor-pointer uppercase text-2xl font-bold tracking-tighter h-full flex items-center border-b-2 border-transparent hover:border-primary" href="#ubicacion">UBICACIÓN</a>
-</nav>
-<a class="hidden md:block bg-combat-red text-white font-technical-mono text-sm px-6 py-3 uppercase tracking-widest gritty-hover transition-colors raw-border" href="https://wa.me/?text=Hola%20NEXO%2C%20quiero%20probar%20una%20clase.%20%C2%BFMe%20pasan%20informaci%C3%B3n%20sobre%20horarios%20y%20valores%3F" target="_blank">
-            PROBAR UNA CLASE
-        </a>
-<button class="md:hidden text-white">
-<span class="material-symbols-outlined text-3xl">menu</span>
-</button>
-</header>
-<main class="pt-20">
-<!-- 01. HERO SECTION -->
-<section class="relative min-h-[90vh] flex flex-col justify-end px-4 md:px-12 py-24 overflow-hidden border-b-2 border-secondary/20">
-<div class="absolute inset-0 z-0">
-<img alt="High contrast black and white photo of a gritty, industrial boxing gym in Buenos Aires." class="w-full h-full object-cover grayscale contrast-125 brightness-75" src="https://lh3.googleusercontent.com/aida/AEtjO1WRB1f1s3MItoIVFBiUTG-dlaKNwyZOM8bARGExqrE_dZH8OzZ15fxhuHMILFfN1BUPaaGXLowno-VrUWJNbEqSqfsgOVk6YR4vqXfVJhU8nq5K6Dih8poMsV6mCSWKrRjOHFIbdCOeb0PpwpXVoeiFyC1w4OjA37v6K3z7bqjxy6OD0raulD-1JfVZKgI7nLzKr_T2PN9_J-Qp2EU2ZROQBRiz5aIFDUBsitFAtitKtydGSCMqLkteNy4">
-<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent opacity-90"></div>
-</div>
-<div class="relative z-10 max-w-7xl mx-auto w-full">
-<div class="font-technical-mono text-combat-red mb-4 uppercase tracking-[0.2em] flex items-center gap-4 font-bold text-sm">
-<span class="">EST. 2026</span>
-<span class="w-8 h-px bg-combat-red"></span>
-<span class="">BUENOS AIRES</span>
-</div>
-<h1 class="font-headline-lg text-[64px] md:text-[120px] text-on-surface uppercase leading-[0.9] mb-6 max-w-5xl font-bold tracking-tighter shadow-[8px_8px_0px_0px_rgba(0,0,0,0.5)]">
-                    DISCIPLINA DE VERDAD.<br>
-<span class="text-transparent" style="-webkit-text-stroke: 3px rgb(229, 226, 225);">SIN VUELTAS.</span>
-</h1>
-<p class="font-body-lg text-lg text-secondary mb-10 max-w-2xl border-l-2 border-combat-red pl-6">
-                    Boxeo en serio, desde cero o para competir. Técnica, preparación física y una escuela que respeta el oficio.
-                </p>
-<div class="flex flex-col sm:flex-row gap-4 mb-12">
-<a class="bg-combat-red text-white font-technical-mono text-sm px-8 py-4 uppercase hover:bg-red-700 transition-colors w-full sm:w-auto text-center raw-border tracking-widest gritty-hover inline-block" href="https://wa.me/?text=Hola%20NEXO%2C%20quiero%20probar%20una%20clase.%20%C2%BFMe%20pasan%20informaci%C3%B3n%20sobre%20horarios%20y%20valores%3F" target="_blank">
-                        PROBAR UNA CLASE
-                    </a>
-<a class="bg-transparent text-on-surface font-technical-mono text-sm px-8 py-4 uppercase hover:bg-white hover:text-black transition-colors w-full sm:w-auto text-center industrial-border tracking-widest inline-block" href="#horarios">
-                        VER HORARIOS
-                    </a>
-</div>
-<div class="mt-6 flex items-center gap-2 font-technical-mono text-xs text-secondary uppercase tracking-widest">
-<span class="material-symbols-outlined text-sm text-combat-red">location_on</span>AV.SCALABRINI ORTIZ 456, VILLA CRESPO, CABA.</div>
-</div>
-</section>
-<!-- 03. ¿ES PARA VOS? -->
-<section class="py-24 px-4 md:px-12 relative border-b-2 border-secondary/20 bg-background">
-<div class="max-w-7xl mx-auto">
-<div class="mb-12">
-<h2 class="font-headline-lg text-4xl md:text-[64px] text-on-surface uppercase tracking-tighter font-bold">¿QUÉ BUSCÁS?</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
-<div class="bg-surface-container industrial-border p-8 hover:border-combat-red transition-colors group cursor-pointer relative overflow-hidden">
-<div class="absolute top-0 right-0 p-4 font-technical-mono text-xs text-secondary group-hover:text-combat-red transition-colors">01</div>
-<div class="mb-6 h-16 flex items-center">
-<span class="material-symbols-outlined text-4xl text-combat-red">sports_martial_arts</span>
-</div>
-<h3 class="font-headline-md text-2xl text-on-surface uppercase mb-4 font-bold tracking-tighter">EMPEZAR DE CERO</h3>
-<p class="font-body-md text-secondary">No necesitás experiencia. Aprendés desde la base técnica, paso a paso.</p>
-</div>
-<div class="bg-surface-container industrial-border p-8 hover:border-combat-red transition-colors group cursor-pointer relative overflow-hidden">
-<div class="absolute top-0 right-0 p-4 font-technical-mono text-xs text-secondary group-hover:text-combat-red transition-colors">02</div>
-<div class="mb-6 h-16 flex items-center">
-<span class="material-symbols-outlined text-4xl text-combat-red">fitness_center</span>
-</div>
-<h3 class="font-headline-md text-2xl text-on-surface uppercase mb-4 font-bold tracking-tighter">ENTRENAR EN SERIO</h3>
-<p class="font-body-md text-secondary">Técnica, físico y constancia sin convertirlo en una clase de aeróbico con guantes.</p>
-</div>
-<div class="bg-surface-container industrial-border p-8 hover:border-combat-red transition-colors group cursor-pointer relative overflow-hidden bg-surface-container-highest">
-<div class="absolute top-0 right-0 p-4 font-technical-mono text-xs text-secondary group-hover:text-combat-red transition-colors">03</div>
-<div class="mb-6 h-16 flex items-center">
-<span class="material-symbols-outlined text-4xl text-combat-red">military_tech</span>
-</div>
-<h3 class="font-headline-md text-2xl text-on-surface uppercase mb-4 font-bold tracking-tighter">COMPETIR</h3>
-<p class="font-body-md text-secondary">Preparación específica, intensa y disciplinada para quienes quieren subir al ring.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- 04. EL MÉTODO NEXO -->
-<section class="py-24 px-4 md:px-12 bg-background relative border-b-2 border-secondary/20" id="metodo">
-<div class="max-w-7xl mx-auto">
-<div class="mb-16 flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
-<div>
-<h2 class="font-headline-lg text-4xl md:text-[64px] text-on-surface uppercase mb-2 tracking-tighter font-bold">EL MÉTODO NEXO</h2>
-<p class="font-technical-mono text-secondary uppercase tracking-widest text-sm">PROGRESIÓN TÉCNICA</p>
-</div>
-<div class="bg-surface px-4 py-2 industrial-border font-technical-mono text-xs uppercase text-on-surface tracking-widest">
-                    PROTOCOLO TÉCNICO v1.0
-                </div>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 relative z-10">
-<div class="flex flex-col">
-<!-- Phase 1 -->
-<div class="flex industrial-border bg-surface mb-[-2px]">
-<div class="w-16 bg-surface-container flex items-center justify-center font-technical-mono text-sm text-secondary border-r-2 border-[#c6c6c7]">01</div>
-<div class="p-6 flex-1">
-<h3 class="font-headline-md text-2xl text-on-surface uppercase mb-2 font-bold tracking-tighter">FUNDAMENTOS</h3>
-<p class="font-body-md text-secondary">Aprendés a pararte, moverte y pegar correctamente. Boxeo técnico puro. Postura, desplazamientos y golpes básicos.</p>
-</div>
-</div>
-<!-- Phase 2 -->
-<div class="flex industrial-border bg-surface mb-[-2px]">
-<div class="w-16 bg-surface-container flex items-center justify-center font-technical-mono text-sm text-secondary border-r-2 border-[#c6c6c7]">02</div>
-<div class="p-6 flex-1">
-<h3 class="font-headline-md text-2xl text-on-surface uppercase mb-2 font-bold tracking-tighter">PREPARACIÓN</h3>
-<p class="font-body-md text-secondary">Construís el físico necesario para sostener el entrenamiento. Fuerza, resistencia y acondicionamiento.</p>
-</div>
-</div>
-<!-- Phase 3 -->
-<div class="flex industrial-border bg-surface mb-[-2px]">
-<div class="w-16 bg-surface-container flex items-center justify-center font-technical-mono text-sm text-secondary border-r-2 border-[#c6c6c7]">03</div>
-<div class="p-6 flex-1">
-<h3 class="font-headline-md text-2xl text-on-surface uppercase mb-2 font-bold tracking-tighter">SPARRING</h3>
-<p class="font-body-md text-secondary">Cuando estás preparado técnica y físicamente, llevás la técnica al intercambio controlado en el ring. Uso de guantes de 16oz obligatorio.</p>
-</div>
-</div>
-<!-- Phase 4 -->
-<div class="flex raw-border bg-surface-container-highest relative overflow-hidden">
-<div class="w-16 flex items-center justify-center font-technical-mono text-sm text-combat-red border-r-2 border-combat-red font-bold">04</div>
-<div class="p-6 flex-1">
-<h3 class="font-headline-md text-2xl text-on-surface uppercase mb-2 font-bold tracking-tighter">COMPETENCIA</h3>
-<p class="font-body-md text-secondary text-white">Para quienes quieren competir, comienza otra exigencia. Preparación táctica y estratégica.</p>
-</div>
-</div>
-</div>
-<div class="h-full min-h-[400px] relative industrial-border mt-8 lg:mt-0 p-2 bg-surface-container">
-<div class="w-full h-full relative overflow-hidden">
-<img alt="Close up black and white photography of a boxer's hands wrapping handwraps." class="w-full h-full object-cover grayscale contrast-125" src="https://lh3.googleusercontent.com/aida/AEtjO1W04GGcpMrKb1VXt3XNZn6NSkQZKGSJr4Av_nM6HkduxN06uxcEhKtGqRglUygIOxfMegWBF0CKkXuqDHj8Pz_QlYDnPEhzZZHe3TvaamVeFggglY4hrrKaHRhWyM3ZRY55lV41Ktv9j7GA897lfHI-uzeeKRp2PvuTiMeCvx_E2jsPlkVruA-O0BxzAfGTddqzWlLlYzOplDRBPgRCEqqYPKSVoIHiVg9JkLcF3sKDAeHb7_ooOrjYPYF3">
-<div class="absolute inset-0 bg-black/30"></div>
-<div class="absolute bottom-6 left-6 right-6 p-4 bg-background/95 border-l-4 border-combat-red backdrop-blur-sm">
-<p class="font-technical-mono text-sm uppercase text-on-surface tracking-widest">No aceleramos procesos.</p>
-<p class="font-technical-mono text-sm uppercase text-combat-red font-bold mt-1 tracking-widest">Primero técnica. Después intensidad.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- 05. LA ESCUELA -->
-<section class="py-24 px-4 md:px-12 relative border-b-2 border-secondary/20 bg-background" id="escuela">
-<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
-<div class="lg:col-span-5 flex flex-col justify-center">
-<h2 class="font-headline-lg text-4xl md:text-[64px] text-on-surface uppercase mb-6 tracking-tighter font-bold leading-none">UNA ESCUELA<br>CON HISTORIA</h2>
-<p class="font-body-lg text-lg text-secondary mb-8">
-                        Rescatamos la tradición del boxeo argentino: técnica, disciplina, respeto y trabajo constante. No somos un gimnasio de moda, somos un club de pelea.
-                    </p>
-<div class="grid grid-cols-2 gap-4 font-technical-mono text-xs uppercase tracking-widest">
-<div class="industrial-border p-4 bg-surface-container">
-<div class="text-4xl font-headline-md mb-2 text-white font-bold">1920</div>
-<div class="text-secondary">INSPIRACIÓN FAB</div>
-</div>
-<div class="industrial-border p-4 bg-surface-container">
-<div class="text-4xl font-headline-md mb-2 text-white font-bold text-combat-red">100%</div>
-<div class="text-secondary">DISCIPLINA</div>
-</div>
-</div>
-</div>
-<div class="lg:col-span-7 relative grid grid-cols-2 gap-4">
-<div class="h-64 lg:h-[500px] industrial-border mt-12 p-2 bg-surface-container">
-<img alt="Gritty locker room in a boxing gym" class="w-full h-full object-cover grayscale contrast-125" src="https://lh3.googleusercontent.com/aida/AEtjO1XxadSoUAe9uL1j_snaTGq2ThnLiFkJqy7EZ1qNztsUFxXUHlMvfdaN762dL92qi7c7JvPrzPa3TvIdqdEE9Ano4SLonxqvGPaH08Z4E5aFlq_V1Z5yoTUPe45Exv7ySOpKsgPwNwJwHbBThOP62AhJl51n1r8h1vRzYVeNnUYiDzXTssNs2Bmc6HIsR8RfpcrU4G-tkqL3J9y8-zO4eMFPGvbWmj_9k4UhMrpvFBEKfUGrkSdSRWdQG24">
-</div>
-<div class="h-64 lg:h-[500px] industrial-border p-2 bg-surface-container relative">
-<img alt="Experienced boxing trainer demonstrating a technique" class="w-full h-full object-cover grayscale contrast-125" src="https://lh3.googleusercontent.com/aida/AEtjO1WTelZwMT8QFgYkZENZJ6W-s2_35_E5QBMUzTHd1SylSeGRXKg8ob7exbI03Bh8F1K0k4m1PBRb7TymXgb-FCt9cQsagsiVhwhCKkWb73vdNoXAdSj9aZD454iw8IM2vRcXOlg-tzKWHr2402uKjkGUQ4t8i3KnSqkIdo0kyaicCXh7AjeMkB17otNSscHQ6mK7HvwwU9W8f78NV18rVliU9eSG8lq9wqcdUMSGhUnXsVBPejVhMXHsk_8y">
-<div class="absolute bottom-6 right-6 bg-background/95 p-4 border-l-4 border-combat-red max-w-[200px]">
-<p class="font-headline-md text-xl text-white uppercase leading-tight mb-1 font-bold tracking-tighter">EL OFICIO</p>
-<p class="font-technical-mono text-xs text-secondary uppercase tracking-widest">Respeto por la técnica y el rival.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- 08. HORARIOS -->
-<section class="py-24 px-4 md:px-12 bg-background relative border-b-2 border-secondary/20" id="horarios">
-<div class="max-w-7xl mx-auto">
-<div class="relative z-10 mb-10 flex flex-col md:flex-row justify-between items-end gap-6">
-<div>
-<h2 class="font-headline-lg text-4xl md:text-[64px] text-on-surface uppercase mb-2 tracking-tighter font-bold">HORARIOS</h2>
-<p class="font-technical-mono text-secondary uppercase tracking-widest text-sm">GRILLA OPERATIVA / TU PRIMER ENTRENAMIENTO</p>
-</div>
-</div>
-<div class="overflow-x-auto relative z-10 industrial-border bg-surface-container p-2">
-<table class="w-full text-left border-collapse font-technical-mono bg-background">
-<thead>
-<tr class="text-xs uppercase text-secondary bg-surface-container-highest border-b-2 border-[#c6c6c7] tracking-widest">
-<th class="p-4 w-24 border-r-2 border-[#c6c6c7]">HORA</th>
-<th class="p-4 border-r-2 border-[#c6c6c7]">LUNES</th>
-<th class="p-4 border-r-2 border-[#c6c6c7]">MARTES</th>
-<th class="p-4 border-r-2 border-[#c6c6c7]">MIÉRCOLES</th>
-<th class="p-4 border-r-2 border-[#c6c6c7]">JUEVES</th>
-<th class="p-4">VIERNES</th>
-</tr>
-</thead>
-<tbody class="text-sm">
-<!-- 08:00 -->
-<tr class="border-b border-[#353534]">
-<td class="p-4 border-r border-[#353534] font-bold text-on-surface text-xl font-headline-md tracking-tighter">08:00</td>
-<td class="p-4 border-r border-[#353534] bg-surface-container-highest">INICIAL <span class="block text-[10px] text-secondary mt-1">90 MIN</span></td>
-<td class="p-4 border-r border-[#353534]"></td>
-<td class="p-4 border-r border-[#353534] bg-surface-container-highest">INICIAL <span class="block text-[10px] text-secondary mt-1">90 MIN</span></td>
-<td class="p-4 border-r border-[#353534]"></td>
-<td class="p-4 bg-surface-container-highest">INICIAL <span class="block text-[10px] text-secondary mt-1">90 MIN</span></td>
-</tr>
-<!-- 18:00 -->
-<tr class="border-b border-[#353534]">
-<td class="p-4 border-r border-[#353534] font-bold text-on-surface text-xl font-headline-md tracking-tighter">18:00</td>
-<td class="p-4 border-r border-[#353534] bg-surface">AVANZADO</td>
-<td class="p-4 border-r border-[#353534] bg-surface-container-highest">INICIAL</td>
-<td class="p-4 border-r border-[#353534] bg-surface">AVANZADO</td>
-<td class="p-4 border-r border-[#353534] bg-surface-container-highest">INICIAL</td>
-<td class="p-4 bg-surface">AVANZADO</td>
-</tr>
-<!-- 20:00 -->
-<tr>
-<td class="p-4 border-r border-[#353534] font-bold text-on-surface text-xl font-headline-md tracking-tighter">20:00</td>
-<td class="p-4 border-r border-[#353534] bg-combat-red text-white font-bold">COMPETENCIA</td>
-<td class="p-4 border-r border-[#353534] bg-surface">AVANZADO</td>
-<td class="p-4 border-r border-[#353534] bg-combat-red text-white font-bold">COMPETENCIA</td>
-<td class="p-4 border-r border-[#353534] bg-surface">AVANZADO</td>
-<td class="p-4 bg-combat-red text-white font-bold">SPARRING LIBRE</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="mt-8 flex flex-col sm:flex-row justify-between items-center gap-6 relative z-10 bg-surface-container p-6 industrial-border">
-<div class="font-technical-mono text-sm text-secondary uppercase flex flex-col md:flex-row items-start md:items-center gap-4 tracking-widest">
-<div class="flex items-center gap-2 text-combat-red font-bold">
-<span class="material-symbols-outlined">info</span>
-<span class="">TU PRIMER ENTRENAMIENTO</span>
-</div>
-<span class="">Duración: 90 MIN | Todos los niveles | Requisito: Ropa cómoda + Agua. Vendas 5m obligatorias.</span>
-</div>
-<a class="bg-combat-red text-white font-technical-mono text-sm px-8 py-4 uppercase hover:bg-red-700 transition-colors w-full sm:w-auto text-center raw-border tracking-widest gritty-hover" href="https://wa.me/?text=Hola%20NEXO%2C%20quiero%20probar%20una%20clase.%20%C2%BFMe%20pasan%20informaci%C3%B3n%20sobre%20horarios%20y%20valores%3F" target="_blank">
-                    RESERVAR CLASE DE PRUEBA
-                </a>
-</div>
-</div>
-</section>
-<!-- 10. CTA FINAL & UBICACIÓN -->
-<section class="py-24 px-4 md:px-12 text-center relative overflow-hidden bg-background border-b-2 border-secondary/20" id="ubicacion">
-<div class="max-w-3xl mx-auto relative z-10">
-<h2 class="font-headline-lg text-4xl md:text-[84px] text-on-surface uppercase mb-6 leading-[0.9] tracking-tighter font-bold">
-                    NOS ENCONTRÁS ACÁ
-                </h2>
-<div class="w-16 h-2 bg-combat-red mx-auto mb-12"></div>
-<div class="bg-surface-container p-8 industrial-border mb-10 max-w-md mx-auto text-left flex flex-col items-center text-center gap-4">
-<span class="material-symbols-outlined text-combat-red text-4xl">location_on</span>
-<div>
-<h3 class="font-headline-md font-bold text-on-surface uppercase text-2xl mb-2 tracking-tighter">UBICACIÓN&nbsp;</h3>
-<p class="font-technical-mono text-secondary tracking-widest text-sm leading-relaxed">AV. SCALABRINI ORTIZ 456&nbsp;<br>VILLA CRESPO, CABA</p>
-</div>
-<a class="font-technical-mono text-sm text-on-background underline hover:text-combat-red transition-colors inline-block mt-4 tracking-widest uppercase font-bold" href="https://maps.google.com" target="_blank">CÓMO LLEGAR</a>
-</div>
-<a class="bg-combat-red text-white font-technical-mono text-sm px-10 py-5 uppercase hover:bg-white hover:text-black transition-colors raw-border flex items-center justify-center gap-3 mx-auto w-full max-w-sm tracking-widest font-bold gritty-hover" href="https://wa.me/?text=Hola%20NEXO%2C%20quiero%20probar%20una%20clase.%20%C2%BFMe%20pasan%20informaci%C3%B3n%20sobre%20horarios%20y%20valores%3F" target="_blank">
-<span class="material-symbols-outlined">chat</span>
-                    PROBAR UNA CLASE
-                </a>
-</div>
-</section>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header><div class="wrap head"><a class="brand" href="#inicio" aria-label="NEXO Fight Club, volver al inicio">NEXO <b>FIGHT CLUB</b></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navegacion" aria-label="Abrir menú">☰</button><nav id="navegacion" class="nav" aria-label="Navegación principal"><a href="#para-vos">Para vos</a><a href="#metodo">Método</a><a href="#experiencia">Experiencia</a><a class="nav-action" href="#proyecto">El proyecto ↗</a></nav></div></header>
+<div class="demo"><strong>PROYECTO CONCEPTUAL</strong> · Diseño de experiencia y dirección visual · Información ilustrativa</div>
+<main id="contenido">
+<section id="inicio" class="hero" aria-labelledby="hero-title"><div class="hero-image"><img src="hero.png" alt="Interior de un espacio de entrenamiento de boxeo" fetchpriority="high"></div><div class="wrap hero-content"><div class="eyebrow">Boxeo con método / Buenos Aires</div><h1 id="hero-title" class="display">EL RING<br>EMPIEZA <em>ACÁ.</em></h1><p class="hero-copy">Una escuela de boxeo pensada para aprender la técnica, construir confianza y encontrar tu propio ritmo.</p><div class="actions"><a class="button" href="#para-vos">Encontrá tu camino <span aria-hidden="true">&nbsp;↗</span></a><a class="button secondary" href="#metodo">Conocé el método</a></div><div class="hero-bottom">Empezar de cero también es empezar en serio</div></div></section>
+<section id="para-vos" class="section"><div class="wrap"><span class="number">01 / TU PUNTO DE PARTIDA</span><div class="section-head"><h2 class="section-title">HAY UN LUGAR<br>PARA VOS.</h2><p class="section-intro">Tres objetivos diferentes. Una misma base: aprender a boxear con criterio, sin atajos ni exigencias fuera de lugar.</p></div><div class="paths"><article class="path"><span class="path-index">01 — COMENZAR</span><h3>DESDE CERO</h3><p>No necesitás saber pegar. Empezás por postura, coordinación y desplazamiento.</p><span class="tag">Tu primer paso cuenta</span></article><article class="path"><span class="path-index">02 — PROGRESAR</span><h3>ENTRENAR MEJOR</h3><p>Profundizá en la técnica y desarrollá fuerza, resistencia y constancia.</p><span class="tag">Técnica antes que velocidad</span></article><article class="path"><span class="path-index">03 — DESAFIARTE</span><h3>IR MÁS LEJOS</h3><p>Un camino de preparación más exigente para quienes quieran explorar el boxeo competitivo.</p><span class="tag">A tu ritmo y con preparación</span></article></div></div></section>
+<section id="metodo" class="section"><div class="wrap method"><div class="method-copy"><span class="number">02 / EL MÉTODO</span><h2 class="section-title">CADA GOLPE<br>TIENE UNA BASE.</h2><p>No se trata de entrar al ring el primer día. La propuesta organiza el aprendizaje en etapas claras para que cada persona sepa dónde está y qué viene después.</p><div class="steps"><div class="step"><span>01</span><div><h3>FUNDAMENTOS</h3><p>Postura, guardia, desplazamientos y golpes básicos.</p></div></div><div class="step"><span>02</span><div><h3>CONDICIÓN</h3><p>Preparación física integrada al trabajo técnico.</p></div></div><div class="step"><span>03</span><div><h3>APLICACIÓN</h3><p>Práctica progresiva y acompañada según la experiencia.</p></div></div></div></div><div class="method-image"><img src="prep.png" alt="Preparación de vendas de boxeo antes de entrenar" loading="lazy"></div></div></section>
+<section class="statement" aria-label="Filosofía de entrenamiento"><div class="wrap"><p>PRIMERO<br>APRENDÉS.<br><span>DESPUÉS, PEGÁS.</span></p></div></section>
+<section id="experiencia" class="section"><div class="wrap"><span class="number">03 / LA EXPERIENCIA</span><div class="section-head"><h2 class="section-title">MÁS QUE<br>ENTRENAR.</h2><p class="section-intro">Una identidad para una comunidad que entiende el boxeo como práctica, aprendizaje y encuentro.</p></div><div class="experience"><div class="experience-photo"><img src="ring fight.png" alt="Dos boxeadores entrenando en un ring" loading="lazy"></div><div class="experience-copy"><h3>VENÍ COMO SOS.<br>CRECÉ A TU RITMO.</h3><p>El concepto de NEXO busca hacer visible una experiencia intensa, pero accesible para quien recién empieza.</p><ul><li>Un recorrido claro para principiantes</li><li>Una identidad visual con carácter</li><li>Un próximo paso fácil de encontrar</li></ul></div></div></div></section>
+<section class="section"><div class="wrap faq"><span class="number">04 / ANTES DE EMPEZAR</span><h2 class="section-title">PREGUNTAS<br>FRECUENTES.</h2><details><summary>¿Necesito experiencia previa?</summary><p>El recorrido inicial de este concepto está pensado para personas que empiezan desde cero.</p></details><details><summary>¿Tengo que querer competir?</summary><p>No. La propuesta distingue distintos objetivos: aprender, entrenar y, si te interesa, avanzar hacia una preparación competitiva.</p></details><details><summary>¿Dónde veo los horarios y precios?</summary><p>Esta web es un prototipo de portfolio. No publica horarios, precios ni reservas reales de un gimnasio.</p></details></div></section>
+<section id="proyecto" class="end"><div class="wrap"><span class="eyebrow">Caso de estudio / Diseño UX/UI</span><h2 class="section-title">UN CONCEPTO QUE<br>SE SIENTE REAL.</h2><p>NEXO Fight Club es una propuesta conceptual de sitio web. Explora cómo comunicar una escuela de boxeo con claridad, personalidad y un recorrido pensado para quien llega por primera vez.</p><a class="button" href="https://github.com/vicpiatig-bit/8b75e929-nexo-fight-club#readme" target="_blank" rel="noopener noreferrer">Ver el caso de estudio ↗</a></div></section>
 </main>
-<!-- Footer -->
-<footer class="bg-surface-container text-on-surface w-full py-12 px-4 md:px-12 border-t border-[#353534]">
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-<div class="flex flex-col gap-4">
-<div class="font-headline-md text-3xl font-black text-on-surface uppercase tracking-tighter">
-                NEXO FIGHT CLUB
-            </div>
-<p class="font-technical-mono text-sm text-secondary max-w-xs tracking-widest uppercase leading-relaxed">
-                Disciplina técnica. Boxeo real. Buenos Aires, Argentina.
-            </p>
-<div class="font-technical-mono text-xs text-secondary mt-8 uppercase tracking-widest">
-                © 2026 NEXO FIGHT CLUB. LA DISCIPLINA ES LIBERTAD.
-            </div>
-</div>
-<div class="flex flex-col md:items-end justify-between gap-8">
-<nav class="flex flex-wrap gap-6 font-technical-mono text-sm uppercase tracking-widest font-bold">
-<a class="text-secondary hover:text-combat-red transition-colors" href="#ubicacion">UBICACIÓN</a>
-<a class="text-secondary hover:text-combat-red transition-colors" href="#">PRIVACIDAD</a>
-<a class="text-secondary hover:text-combat-red transition-colors" href="#">TÉRMINOS</a>
-<a class="text-combat-red hover:text-white transition-colors" href="https://wa.me/?text=Hola%20NEXO%2C%20quiero%20probar%20una%20clase.%20%C2%BFMe%20pasan%20informaci%C3%B3n%20sobre%20horarios%20y%20valores%3F" target="_blank">WHATSAPP</a>
-</nav>
-<div class="font-technical-mono text-[10px] text-secondary/50 uppercase tracking-widest text-right">
-                SISTEMA OPERATIVO v2.0
-            </div>
-</div>
-</div>
-</footer>
-
-
+<footer><div class="wrap"><a class="brand" href="#inicio">NEXO <b>FIGHT CLUB</b></a><p>Proyecto conceptual de portfolio · No representa un gimnasio operativo.</p><a href="#inicio">Volver arriba ↑</a></div></footer>
+<script>
+const toggle=document.querySelector(".menu-toggle"),nav=document.querySelector(".nav");
+toggle.addEventListener("click",()=>{const open=toggle.getAttribute("aria-expanded")!=="true";toggle.setAttribute("aria-expanded",String(open));toggle.setAttribute("aria-label",open?"Cerrar menú":"Abrir menú");toggle.textContent=open?"✕":"☰";nav.classList.toggle("open",open)});
+nav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{nav.classList.remove("open");toggle.setAttribute("aria-expanded","false");toggle.setAttribute("aria-label","Abrir menú");toggle.textContent="☰"}));
+</script>
 </body></html>
