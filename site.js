@@ -61,3 +61,15 @@ form.addEventListener("submit", (event) => {
   result.hidden = false;
   result.focus();
 });
+
+const footer = document.querySelector(".site-footer");
+
+if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  const footerObserver = new IntersectionObserver(([entry]) => {
+    if (!entry.isIntersecting) return;
+    footer.classList.add("footer-enter");
+    footerObserver.disconnect();
+  }, { threshold: 0.2 });
+
+  footerObserver.observe(footer);
+}
