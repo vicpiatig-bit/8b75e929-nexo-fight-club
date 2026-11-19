@@ -1,169 +1,306 @@
-<!doctype html>
-<html lang="es-AR">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#131313">
-  <meta name="description" content="NEXO Fight Club. Una landing conceptual para una escuela de boxeo en Buenos Aires. Diseño UX/UI, contenido y dirección visual por Studio V.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="NEXO Fight Club | Disciplina de verdad">
-  <meta property="og:description" content="Un proyecto conceptual de diseño UX/UI y dirección visual por Studio V.">
-  <meta property="og:image" content="https://8b75e929-nexo-fight-club.netlify.app/nexo-hero.jpg">
-  <meta property="og:image:width" content="1376">
-  <meta property="og:image:height" content="768">
-  <title>NEXO Fight Club | Disciplina de verdad</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Hanken+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="site.js" defer></script>
+<!DOCTYPE html><html class="dark scroll-smooth" lang="es-AR"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>NEXO Fight Club | Boxeo en Buenos Aires</title>
+<meta content="Escuela de boxeo técnico en Buenos Aires. Boxeo en serio, desde cero o para competir. Técnica, preparación física y una escuela que respeta el oficio." name="description">
+<meta name="theme-color" content="#131313">
+<meta property="og:type" content="website">
+<meta property="og:title" content="NEXO Fight Club | Boxeo en Buenos Aires">
+<meta property="og:image" content="https://8b75e929-nexo-fight-club.netlify.app/nexo-hero.jpg">
+<meta property="og:image:width" content="1376">
+<meta property="og:image:height" content="768">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script src="site.js" defer></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&amp;family=Hanken+Grotesk:wght@400;500;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
+
 </head>
-<body>
-  <a class="skip" href="#contenido">Saltar al contenido</a>
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="#inicio">NEXO FIGHT CLUB</a>
-      <button class="menu-toggle" hidden type="button" aria-controls="navegacion" aria-expanded="false">Menú</button>
-      <nav class="nav" id="navegacion" aria-label="Navegación principal">
-        <a href="#metodo">Método</a>
-        <a href="#horarios">Horarios</a>
-        <a href="#escuela">Escuela</a>
-        <a href="#ubicacion">Ubicación</a>
-      </nav>
-      <a class="button header-cta" href="#clase" data-trial>Probar una clase</a>
-    </div>
-  </header>
-
-  <main id="contenido" tabindex="-1">
-    <section class="hero" id="inicio" aria-labelledby="titulo">
-      <img class="hero-photo" src="nexo-hero.jpg" width="1376" height="768" alt="" fetchpriority="high">
-      <div class="wrap hero-content">
-        <p class="eyebrow hero-kicker">Boxeo en Buenos Aires <span>Proyecto conceptual</span></p>
-        <h1 id="titulo">Disciplina de verdad.<br>Sin vueltas.</h1>
-        <p class="hero-copy">Boxeo en serio, desde cero o para competir. Técnica, preparación física y una escuela que respeta el oficio.</p>
-        <div class="actions">
-          <a class="button" href="#clase" data-trial>Probar una clase</a>
-          <a class="button button-secondary" href="#horarios">Ver horarios</a>
-        </div>
-        <p class="hero-location">Villa Crespo, CABA</p>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="objetivos">
-      <div class="wrap">
-        <h2 id="objetivos">¿Qué buscás?</h2>
-        <div class="goals">
-          <article class="goal">
-            <span class="goal-number" aria-hidden="true">01</span>
-            <h3>Empezar de cero</h3>
-            <p>No necesitás experiencia. Aprendés desde la base técnica, paso a paso.</p>
-          </article>
-          <article class="goal">
-            <span class="goal-number" aria-hidden="true">02</span>
-            <h3>Entrenar en serio</h3>
-            <p>Mejorá tu técnica, ganá resistencia y construí una rutina de entrenamiento.</p>
-          </article>
-          <article class="goal">
-            <span class="goal-number" aria-hidden="true">03</span>
-            <h3>Competir</h3>
-            <p>Preparación específica para quienes quieren subir al ring.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="metodo" aria-labelledby="metodo-titulo">
-      <div class="wrap">
-        <h2 id="metodo-titulo">El método NEXO</h2>
-        <p class="section-note">Progresión técnica</p>
-        <div class="method-layout">
-          <ol class="steps">
-            <li><span aria-hidden="true">01</span><div><h3>Fundamentos</h3><p>Postura, guardia y desplazamientos. Aprendés a moverte y a coordinar los golpes básicos.</p></div></li>
-            <li><span aria-hidden="true">02</span><div><h3>Preparación</h3><p>Desarrollás la fuerza y la resistencia para sostener el entrenamiento.</p></div></li>
-            <li><span aria-hidden="true">03</span><div><h3>Sparring</h3><p>Cuando estás preparado, llevás lo aprendido a la práctica supervisada en el ring.</p></div></li>
-            <li><span aria-hidden="true">04</span><div><h3>Competencia</h3><p>Si querés competir, incorporás preparación táctica y un entrenamiento acorde a tu nivel.</p></div></li>
-          </ol>
-          <figure class="photo method-photo">
-            <img src="nexo-metodo.jpg" width="1024" height="1024" alt="Un boxeador recibe ayuda para vendarse las manos antes de entrenar" loading="lazy">
-            <figcaption>Primero técnica.<br><strong>Después intensidad.</strong></figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="escuela" aria-labelledby="escuela-titulo">
-      <div class="wrap school-layout">
-        <div class="school-copy">
-          <h2 id="escuela-titulo">Una escuela<br>con historia</h2>
-          <p>La propuesta recupera la tradición del boxeo argentino. Técnica, respeto y trabajo constante en un espacio donde cada persona puede empezar a su ritmo.</p>
-        </div>
-        <figure class="photo school-photo">
-          <img src="nexo-historia.jpg" width="1024" height="1024" alt="Guantes de cuero y un cronómetro sobre la lona de un ring" loading="lazy">
-          <figcaption>El oficio y el espacio</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="section" id="horarios" aria-labelledby="horarios-titulo">
-      <div class="wrap">
-        <h2 id="horarios-titulo">Horarios</h2>
-        <p class="section-note" id="horarios-nota">Grilla ilustrativa · Clases de 90 minutos</p>
-        <p class="table-hint">Deslizá la grilla para ver toda la semana.</p>
-        <div class="schedule" role="region" aria-label="Grilla semanal de horarios ilustrativos" tabindex="0">
-          <table aria-describedby="horarios-nota">
-            <thead><tr><th scope="col">Hora</th><th scope="col">Lunes</th><th scope="col">Martes</th><th scope="col">Miércoles</th><th scope="col">Jueves</th><th scope="col">Viernes</th></tr></thead>
-            <tbody>
-              <tr><th scope="row">08:00</th><td class="initial">Inicial</td><td>—</td><td class="initial">Inicial</td><td>—</td><td class="initial">Inicial</td></tr>
-              <tr><th scope="row">18:00</th><td>Avanzado</td><td class="initial">Inicial</td><td>Avanzado</td><td class="initial">Inicial</td><td>Avanzado</td></tr>
-              <tr><th scope="row">20:00</th><td class="advanced">Competencia</td><td>Avanzado</td><td class="advanced">Competencia</td><td>Avanzado</td><td class="advanced">Sparring libre</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="schedule-action">
-          <p>Para tu primera clase, traé ropa cómoda y agua.</p>
-          <a class="button" href="#clase" data-trial>Probar una clase</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section location" id="ubicacion" aria-labelledby="ubicacion-titulo">
-      <div class="wrap">
-        <h2 id="ubicacion-titulo">Villa Crespo, Buenos Aires</h2>
-        <div id="clase" class="actions location-actions">
-          <a class="button" href="#horarios" data-trial>Probar una clase</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <a class="brand" href="#inicio">NEXO FIGHT CLUB</a>
-      <p>Proyecto conceptual de portfolio · Diseño y dirección visual por Studio V.</p>
-      <a class="footer-top" href="#inicio">Volver arriba ↑</a>
-    </div>
-  </footer>
-
-  <dialog class="trial" aria-labelledby="trial-title" aria-describedby="trial-note">
-    <div class="trial-head">
-      <p class="eyebrow">Demo de reserva</p>
-      <form method="dialog"><button type="submit" class="close" aria-label="Cerrar simulación">×</button></form>
-    </div>
-    <h2 id="trial-title">Probá una clase</h2>
-    <p id="trial-note">Elegí un turno de ejemplo para ver cómo sería el recorrido de reserva.</p>
-    <form class="trial-form">
-      <label for="turno">Turno inicial</label>
-      <select id="turno" required>
-        <option value="">Elegí un horario</option>
-        <option>Lunes a las 08:00</option>
-        <option>Martes a las 18:00</option>
-        <option>Miércoles a las 08:00</option>
-        <option>Jueves a las 18:00</option>
-        <option>Viernes a las 08:00</option>
-      </select>
-      <button class="button" type="submit">Simular reserva</button>
-    </form>
-    <p class="trial-result" role="status" tabindex="-1" hidden></p>
-  </dialog>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden antialiased selection:bg-combat-red selection:text-white">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<div class="bg-texture" aria-hidden="true"></div>
+<!-- TopNavBar -->
+<header class="bg-background/95 backdrop-blur-sm fixed top-0 w-full z-50 border-b border-[#353534] flex justify-between items-center px-4 md:px-12 h-20 max-w-full">
+<a class="font-headline-md text-2xl font-black tracking-tighter text-on-background uppercase whitespace-nowrap" href="#inicio">NEXO FIGHT CLUB</a>
+<nav id="navegacion" aria-label="Navegación principal" class="nav hidden lg:flex gap-8 h-full items-center"><a class="text-secondary font-headline-md hover:text-combat-red transition-colors duration-200 cursor-pointer uppercase text-2xl font-bold tracking-tighter h-full flex items-center border-b-2 border-transparent hover:border-combat-red" href="#metodo">MÉTODO</a><span class="text-secondary/20 text-2xl font-bold">|</span><a class="text-secondary font-headline-md hover:text-combat-red transition-colors duration-200 cursor-pointer uppercase text-2xl font-bold tracking-tighter h-full flex items-center border-b-2 border-transparent hover:border-combat-red" href="#horarios">HORARIOS</a><span class="text-secondary/20 text-2xl font-bold">|</span><a class="text-secondary font-headline-md hover:text-combat-red transition-colors duration-200 cursor-pointer uppercase text-2xl font-bold tracking-tighter h-full flex items-center border-b-2 border-transparent hover:border-combat-red" href="#escuela">ESCUELA</a><span class="text-secondary/20 text-2xl font-bold">|</span><a class="text-secondary font-headline-md hover:text-combat-red transition-colors duration-200 cursor-pointer uppercase text-2xl font-bold tracking-tighter h-full flex items-center border-b-2 border-transparent hover:border-combat-red" href="#ubicacion">UBICACIÓN</a></nav>
+<a class="hidden lg:block bg-combat-red text-white font-technical-mono text-sm px-6 py-3 uppercase tracking-widest gritty-hover transition-colors raw-border" href="#horarios" data-trial>
+            PROBAR UNA CLASE
+        </a>
+<button type="button" class="menu-toggle lg:hidden text-white" aria-controls="navegacion" aria-expanded="false" aria-label="Abrir menú"><span class="material-symbols-outlined text-3xl" aria-hidden="true">menu</span></button>
+</header>
+<main class="pt-20" id="contenido" tabindex="-1">
+<!-- 01. HERO SECTION -->
+<section id="inicio" class="relative min-h-[90vh] flex flex-col justify-end px-4 md:px-12 py-24 overflow-hidden border-b-2 border-secondary/20">
+<div class="absolute inset-0 z-0">
+<img alt="" class="hero-image w-full h-full object-cover brightness-75 contrast-125" src="nexo-hero.jpg" width="1376" height="768" fetchpriority="high">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent opacity-90"></div>
+</div>
+<div class="hero-content relative z-10 max-w-7xl mx-auto w-full">
+<div class="font-technical-mono text-combat-red mb-4 uppercase tracking-[0.2em] flex items-center gap-4 font-bold text-sm">
+<span>EST. 2026</span>
+<span class="w-8 h-px bg-combat-red"></span>
+<span>BUENOS AIRES</span>
+</div>
+<h1 class="font-headline-lg text-[64px] md:text-[120px] text-on-surface uppercase leading-[0.9] mb-6 max-w-5xl font-bold tracking-tighter shadow-[8px_8px_0px_0px_rgba(0,0,0,0.5)]">
+                    DISCIPLINA DE VERDAD.<br>
+<span>SIN VUELTAS.</span>
+</h1>
+<p class="font-body-lg text-lg text-secondary mb-10 max-w-2xl border-l-2 border-combat-red pl-6">
+                    Boxeo en serio, desde cero o para competir. Técnica, preparación física y una escuela que respeta el oficio.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 mb-12">
+<a class="bg-combat-red text-white font-technical-mono text-sm px-8 py-4 uppercase hover:bg-red-700 transition-colors w-full sm:w-auto text-center raw-border tracking-widest gritty-hover inline-block" href="#horarios" data-trial>
+                        PROBAR UNA CLASE
+                    </a>
+<a class="bg-transparent text-on-surface font-technical-mono text-sm px-8 py-4 uppercase hover:bg-white hover:text-black transition-colors w-full sm:w-auto text-center industrial-border tracking-widest inline-block" href="#horarios">
+                        VER HORARIOS
+                    </a>
+</div>
+<div class="mt-6 flex items-center gap-2 font-technical-mono text-xs text-secondary uppercase tracking-widest">
+<span class="material-symbols-outlined text-sm text-combat-red">location_on</span>AV. SCALABRINI ORTIZ 456, VILLA CRESPO, CABA.</div>
+</div>
+</section>
+<!-- 03. ¿ES PARA VOS? -->
+<section class="py-24 px-4 md:px-12 relative border-b-2 border-secondary/20 bg-background">
+<div class="max-w-7xl mx-auto">
+<div class="mb-12">
+<h2 class="font-headline-lg text-4xl md:text-[64px] text-on-surface uppercase tracking-tighter font-bold">¿QUÉ BUSCÁS?</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+<div class="bg-surface-container industrial-border p-8 hover:border-combat-red transition-colors group relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 font-technical-mono text-xs text-secondary group-hover:text-combat-red transition-colors">01</div>
+<div class="mb-6 h-16 flex items-center">
+<span class="material-symbols-outlined text-4xl text-combat-red">sports_martial_arts</span>
+</div>
+<h3 class="font-headline-md text-2xl text-on-surface uppercase mb-4 font-bold tracking-tighter">EMPEZAR DE CERO</h3>
+<p class="font-body-md text-secondary">No necesitás experiencia. Aprendés desde la base técnica, paso a paso.</p>
+</div>
+<div class="bg-surface-container industrial-border p-8 hover:border-combat-red transition-colors group relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 font-technical-mono text-xs text-secondary group-hover:text-combat-red transition-colors">02</div>
+<div class="mb-6 h-16 flex items-center">
+<span class="material-symbols-outlined text-4xl text-combat-red">fitness_center</span>
+</div>
+<h3 class="font-headline-md text-2xl text-on-surface uppercase mb-4 font-bold tracking-tighter">ENTRENAR EN SERIO</h3>
+<p class="font-body-md text-secondary">Técnica, físico y constancia sin convertirlo en una clase de aeróbico con guantes.</p>
+</div>
+<div class="bg-surface-container industrial-border p-8 hover:border-combat-red transition-colors group relative overflow-hidden bg-surface-container-highest">
+<div class="absolute top-0 right-0 p-4 font-technical-mono text-xs text-secondary group-hover:text-combat-red transition-colors">03</div>
+<div class="mb-6 h-16 flex items-center">
+<span class="material-symbols-outlined text-4xl text-combat-red">military_tech</span>
+</div>
+<h3 class="font-headline-md text-2xl text-on-surface uppercase mb-4 font-bold tracking-tighter">COMPETIR</h3>
+<p class="font-body-md text-secondary">Preparación específica, intensa y disciplinada para quienes quieren subir al ring.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 04. EL MÉTODO NEXO -->
+<section class="py-24 px-4 md:px-12 bg-background relative border-b-2 border-secondary/20" id="metodo">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16 flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+<div>
+<h2 class="font-headline-lg text-4xl md:text-[64px] text-on-surface uppercase mb-2 tracking-tighter font-bold">EL MÉTODO NEXO</h2>
+<p class="font-technical-mono text-secondary uppercase tracking-widest text-sm">PROGRESIÓN TÉCNICA</p>
+</div>
+<div class="bg-surface px-4 py-2 industrial-border font-technical-mono text-xs uppercase text-on-surface tracking-widest">
+                    PROTOCOLO TÉCNICO v1.0
+                </div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 relative z-10">
+<div class="flex flex-col">
+<!-- Phase 1 -->
+<div class="flex industrial-border bg-surface mb-[-2px]">
+<div class="w-16 bg-surface-container flex items-center justify-center font-technical-mono text-sm text-secondary border-r-2 border-[#c6c6c7]">01</div>
+<div class="p-6 flex-1">
+<h3 class="font-headline-md text-2xl text-on-surface uppercase mb-2 font-bold tracking-tighter">FUNDAMENTOS</h3>
+<p class="font-body-md text-secondary">Aprendés a pararte, moverte y pegar correctamente. BOXEO TÉCNICO PURO. Postura, desplazamientos y uso de guantes de 16oz para máxima protección y técnica.</p>
+</div>
+</div>
+<!-- Phase 2 -->
+<div class="flex industrial-border bg-surface mb-[-2px]">
+<div class="w-16 bg-surface-container flex items-center justify-center font-technical-mono text-sm text-secondary border-r-2 border-[#c6c6c7]">02</div>
+<div class="p-6 flex-1">
+<h3 class="font-headline-md text-2xl text-on-surface uppercase mb-2 font-bold tracking-tighter">PREPARACIÓN</h3>
+<p class="font-body-md text-secondary">Construís el físico necesario para sostener el entrenamiento. Fuerza, resistencia y acondicionamiento.</p>
+</div>
+</div>
+<!-- Phase 3 -->
+<div class="flex industrial-border bg-surface mb-[-2px]">
+<div class="w-16 bg-surface-container flex items-center justify-center font-technical-mono text-sm text-secondary border-r-2 border-[#c6c6c7]">03</div>
+<div class="p-6 flex-1">
+<h3 class="font-headline-md text-2xl text-on-surface uppercase mb-2 font-bold tracking-tighter">SPARRING</h3>
+<p class="font-body-md text-secondary">Cuando estás preparado técnica y físicamente, llevás lo aprendido al intercambio controlado en el ring.</p>
+</div>
+</div>
+<!-- Phase 4 -->
+<div class="flex raw-border bg-surface-container-highest relative overflow-hidden">
+<div class="w-16 flex items-center justify-center font-technical-mono text-sm text-combat-red border-r-2 border-combat-red font-bold">04</div>
+<div class="p-6 flex-1">
+<h3 class="font-headline-md text-2xl text-on-surface uppercase mb-2 font-bold tracking-tighter">COMPETENCIA</h3>
+<p class="font-body-md text-white">Para quienes quieren competir, comienza otra exigencia. Preparación táctica y estratégica.</p>
+</div>
+</div>
+</div>
+<div class="h-full min-h-[400px] relative industrial-border mt-8 lg:mt-0 p-2 bg-surface-container">
+<div class="w-full h-full relative overflow-hidden">
+<img alt="Vendaje técnico de manos" class="w-full h-full object-cover" src="nexo-metodo.jpg" width="1024" height="1024" loading="lazy">
+<div class="absolute inset-0 bg-black/30"></div>
+<div class="absolute bottom-6 left-6 right-6 p-4 bg-background/95 border-l-4 border-combat-red backdrop-blur-sm">
+<p class="font-technical-mono text-sm uppercase text-on-surface tracking-widest">No aceleramos procesos.</p>
+<p class="font-technical-mono text-sm uppercase text-combat-red font-bold mt-1 tracking-widest">Primero técnica. Después intensidad.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 05. LA ESCUELA -->
+<section class="py-24 px-4 md:px-12 relative border-b-2 border-secondary/20 bg-background" id="escuela">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
+<div class="lg:col-span-5 flex flex-col justify-center">
+<h2 class="font-headline-lg text-4xl md:text-[64px] text-on-surface uppercase mb-6 tracking-tighter font-bold leading-none">UNA ESCUELA<br>CON HISTORIA</h2>
+<p class="font-body-lg text-lg text-secondary mb-8">Desde 2026 entrenamos boxeadores con la misma pasión con la que aprendimos a boxear. Rescatamos la tradición del boxeo argentino: técnica, disciplina, respeto y trabajo constante. Somos un club de boxeo.</p>
+<div class="grid grid-cols-2 gap-4 font-technical-mono text-xs uppercase tracking-widest">
+<div class="industrial-border p-4 bg-surface-container"><div class="text-4xl font-headline-md mb-2 text-white font-bold">TRADICIÓN</div><div class="text-secondary">Y TÉCNICA</div></div>
+<div class="industrial-border p-4 bg-surface-container">
+<div class="text-4xl font-headline-md mb-2 text-white font-bold text-combat-red">100%</div>
+<div class="text-secondary">DISCIPLINA</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 relative grid gap-4 grid-cols-1"><div class="h-72 lg:h-[500px] industrial-border p-2 bg-surface-container relative overflow-hidden group"><img alt="Guantes de boxeo de cuero vintage sobre lona y cronómetro de entrenamiento" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-all duration-300" src="nexo-historia.jpg" width="1024" height="1024" loading="lazy"><div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent pointer-events-none"></div><div class="absolute bottom-6 right-6 bg-background/95 p-4 border-l-4 border-combat-red max-w-xs backdrop-blur-sm shadow-[4px_4px_0px_0px_rgba(0,0,0,0.6)]"><p class="font-headline-md text-xl text-white uppercase leading-tight mb-1 font-bold tracking-tighter">EL OFICIO &amp; EL ESPACIO</p><p class="font-technical-mono text-xs text-secondary uppercase tracking-widest">Tradición pura en Villa Crespo. Sin filtros ni distracciones.</p></div></div></div>
+</div>
+</section>
+<!-- 08. HORARIOS -->
+<section class="py-24 px-4 md:px-12 bg-background relative border-b-2 border-secondary/20" id="horarios">
+<div class="max-w-7xl mx-auto">
+<div class="relative z-10 mb-10 flex flex-col md:flex-row justify-between items-end gap-6">
+<div>
+<h2 class="font-headline-lg text-4xl md:text-[64px] text-on-surface uppercase mb-2 tracking-tighter font-bold">HORARIOS</h2>
+<p class="font-technical-mono text-secondary uppercase tracking-widest text-sm">GRILLA OPERATIVA / TU PRIMER ENTRENAMIENTO</p>
+</div>
+</div>
+<div class="schedule-scroll overflow-x-auto relative z-10 industrial-border bg-surface-container p-2" role="region" aria-label="Horarios semanales" tabindex="0">
+<table class="w-full min-w-[680px] text-left border-collapse font-technical-mono bg-background">
+<thead>
+<tr class="text-xs uppercase text-secondary bg-surface-container-highest border-b-2 border-[#c6c6c7] tracking-widest">
+<th scope="col" class="p-4 w-24 border-r-2 border-[#c6c6c7]">HORA</th>
+<th scope="col" class="p-4 border-r-2 border-[#c6c6c7]">LUNES</th>
+<th scope="col" class="p-4 border-r-2 border-[#c6c6c7]">MARTES</th>
+<th scope="col" class="p-4 border-r-2 border-[#c6c6c7]">MIÉRCOLES</th>
+<th scope="col" class="p-4 border-r-2 border-[#c6c6c7]">JUEVES</th>
+<th scope="col" class="p-4">VIERNES</th>
+</tr>
+</thead>
+<tbody class="text-sm">
+<!-- 08:00 -->
+<tr class="border-b border-[#353534]">
+<th scope="row" class="p-4 border-r border-[#353534] font-bold text-on-surface text-xl font-headline-md tracking-tighter">08:00</th>
+<td class="p-4 border-r border-[#353534] bg-surface-container-highest">INICIAL <span class="block text-[10px] text-secondary mt-1">90 MIN</span></td>
+<td class="p-4 border-r border-[#353534]"></td>
+<td class="p-4 border-r border-[#353534] bg-surface-container-highest">INICIAL <span class="block text-[10px] text-secondary mt-1">90 MIN</span></td>
+<td class="p-4 border-r border-[#353534]"></td>
+<td class="p-4 bg-surface-container-highest">INICIAL <span class="block text-[10px] text-secondary mt-1">90 MIN</span></td>
+</tr>
+<!-- 18:00 -->
+<tr class="border-b border-[#353534]">
+<th scope="row" class="p-4 border-r border-[#353534] font-bold text-on-surface text-xl font-headline-md tracking-tighter">18:00</th>
+<td class="p-4 border-r border-[#353534] bg-surface">AVANZADO</td>
+<td class="p-4 border-r border-[#353534] bg-surface-container-highest">INICIAL</td>
+<td class="p-4 border-r border-[#353534] bg-surface">AVANZADO</td>
+<td class="p-4 border-r border-[#353534] bg-surface-container-highest">INICIAL</td>
+<td class="p-4 bg-surface">AVANZADO</td>
+</tr>
+<!-- 20:00 -->
+<tr>
+<th scope="row" class="p-4 border-r border-[#353534] font-bold text-on-surface text-xl font-headline-md tracking-tighter">20:00</th>
+<td class="p-4 border-r border-[#353534] bg-combat-red text-white font-bold">COMPETENCIA</td>
+<td class="p-4 border-r border-[#353534] bg-surface">AVANZADO</td>
+<td class="p-4 border-r border-[#353534] bg-combat-red text-white font-bold">COMPETENCIA</td>
+<td class="p-4 border-r border-[#353534] bg-surface">AVANZADO</td>
+<td class="p-4 bg-combat-red text-white font-bold">SPARRING LIBRE</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-8 flex flex-col sm:flex-row justify-between items-center gap-6 relative z-10 bg-surface-container p-6 industrial-border">
+<div class="font-technical-mono text-sm text-secondary uppercase flex flex-col md:flex-row items-start md:items-center gap-4 tracking-widest"><div class="flex items-center gap-2 text-combat-red font-bold"><span class="material-symbols-outlined text-base">info</span><span class="text-secondary tracking-widest text-xs md:text-sm font-technical-mono uppercase">DURACIÓN: 90 MIN | TODOS LOS NIVELES | REQUISITO: ROPA CÓMODA + AGUA</span></div></div>
+<a class="bg-combat-red text-white font-technical-mono text-sm px-8 py-4 uppercase hover:bg-red-700 transition-colors w-full sm:w-auto text-center raw-border tracking-widest gritty-hover" href="#horarios" data-trial>
+                    RESERVAR CLASE DE PRUEBA
+                </a>
+</div>
+</div>
+</section>
+<!-- 10. CTA FINAL & UBICACIÓN -->
+<section class="py-24 px-4 md:px-12 text-center relative overflow-hidden bg-background border-b-2 border-secondary/20" id="ubicacion">
+<div class="max-w-3xl mx-auto relative z-10">
+<h2 class="font-headline-lg text-4xl md:text-[84px] text-on-surface uppercase mb-6 leading-[0.9] tracking-tighter font-bold">
+                    NOS ENCONTRÁS ACÁ
+                </h2>
+<div class="w-16 h-2 bg-combat-red mx-auto mb-12"></div>
+<div class="bg-surface-container p-8 industrial-border mb-10 max-w-md mx-auto text-left flex flex-col items-center text-center gap-4">
+<span class="material-symbols-outlined text-combat-red text-4xl">location_on</span>
+<div>
+<h3 class="font-headline-md font-bold text-on-surface uppercase text-2xl mb-2 tracking-tighter">UBICACIÓN</h3>
+<p class="font-technical-mono text-secondary tracking-widest text-sm leading-relaxed">AV. SCALABRINI ORTIZ 456&nbsp;<br>VILLA CRESPO, CABA</p>
+</div>
+<a class="font-technical-mono text-sm text-on-background underline hover:text-combat-red transition-colors inline-block mt-4 tracking-widest uppercase font-bold" href="https://www.google.com/maps/search/?api=1&amp;query=Av.%20Scalabrini%20Ortiz%20456%2C%20Villa%20Crespo%2C%20Buenos%20Aires" target="_blank" rel="noopener noreferrer">CÓMO LLEGAR</a>
+</div>
+<a class="bg-combat-red text-white font-technical-mono text-sm px-10 py-5 uppercase hover:bg-white hover:text-black transition-colors raw-border flex items-center justify-center gap-3 mx-auto w-full max-w-sm tracking-widest font-bold gritty-hover" href="#horarios" data-trial>
+<span class="material-symbols-outlined">chat</span>
+                    PROBAR UNA CLASE
+                </a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container text-on-surface w-full py-12 px-4 md:px-12 border-t border-[#353534]">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col gap-4">
+<div class="font-headline-md text-3xl font-black text-on-surface uppercase tracking-tighter">
+                NEXO FIGHT CLUB
+            </div>
+<p class="font-technical-mono text-sm text-secondary max-w-xs tracking-widest uppercase leading-relaxed">
+                Disciplina técnica. Boxeo real. Buenos Aires, Argentina.
+            </p>
+<div class="font-technical-mono text-xs text-secondary mt-8 uppercase tracking-widest">
+                © 2026 NEXO FIGHT CLUB. LA DISCIPLINA ES LIBERTAD.
+                <p class="portfolio-credit">Proyecto conceptual · Studio V.</p>
+            </div>
+</div>
+<div class="flex flex-col md:items-end justify-between gap-8">
+<nav class="flex flex-wrap gap-6 font-technical-mono text-sm uppercase tracking-widest font-bold">
+<a class="text-secondary hover:text-combat-red transition-colors" href="#ubicacion">UBICACIÓN</a>
+<a class="text-combat-red hover:text-white transition-colors" href="#horarios" data-trial>WHATSAPP</a>
+</nav>
+<div class="font-technical-mono text-[10px] text-secondary/50 uppercase tracking-widest text-right">
+                SISTEMA OPERATIVO v2.0
+            </div>
+</div>
+</div>
+</footer>
+<dialog class="trial" aria-labelledby="trial-title" aria-describedby="trial-note">
+  <div class="trial-head">
+    <p class="font-technical-mono text-sm uppercase tracking-widest">Demo de reserva</p>
+    <form method="dialog"><button type="submit" class="close" aria-label="Cerrar simulación">×</button></form>
+  </div>
+  <h2 id="trial-title">Probá una clase</h2>
+  <p id="trial-note">Elegí un turno de ejemplo.</p>
+  <form class="trial-form">
+    <label for="turno">Turno inicial</label>
+    <select id="turno" required>
+      <option value="">Elegí un horario</option>
+      <option>Lunes a las 08:00</option>
+      <option>Martes a las 18:00</option>
+      <option>Miércoles a las 08:00</option>
+      <option>Jueves a las 18:00</option>
+      <option>Viernes a las 08:00</option>
+    </select>
+    <button class="bg-combat-red text-white font-technical-mono text-sm px-6 py-3 uppercase tracking-widest gritty-hover raw-border" type="submit">Simular reserva</button>
+  </form>
+  <p class="trial-result" role="status" tabindex="-1" hidden></p>
+</dialog>
 </body>
 </html>
+

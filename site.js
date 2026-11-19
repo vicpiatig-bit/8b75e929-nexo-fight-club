@@ -1,10 +1,12 @@
 const menu = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".nav");
-const mobile = window.matchMedia("(max-width: 780px)");
+const mobile = window.matchMedia("(max-width: 1023px)");
 
 function setMenu(open) {
   menu.setAttribute("aria-expanded", String(open));
   nav.toggleAttribute("data-open", open);
+  menu.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+  menu.querySelector(".material-symbols-outlined").textContent = open ? "close" : "menu";
 }
 
 function syncMenu() {
@@ -55,7 +57,7 @@ form.addEventListener("change", () => {
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  result.textContent = `Turno elegido: ${slot.value}. La simulación terminó. No se hizo una reserva real.`;
+  result.textContent = `Turno elegido: ${slot.value}. Simulación completada.`;
   result.hidden = false;
   result.focus();
 });
