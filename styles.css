@@ -1498,6 +1498,9 @@ body:has(dialog[open]) {
 }
 
 @media (max-width: 767px) {
+  #escuela .industrial-border .text-4xl {
+    font-size: clamp(1.4rem, 7.2vw, 2.25rem);
+  }
   .schedule-hint {
     display: block;
     margin-bottom: .7rem;
@@ -1529,7 +1532,8 @@ body:has(dialog[open]) {
     transition: transform .3s ease;
   }
   #inicio:hover .hero-image,
-  .nexo-photo:hover {
+  .method-photo:hover .nexo-photo,
+  .heritage-photo:hover .nexo-photo {
     transform: scale(1.035);
   }
 }
