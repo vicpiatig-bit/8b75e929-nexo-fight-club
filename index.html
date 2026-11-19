@@ -1,51 +1,171 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-AR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#111110">
-<meta name="description" content="NEXO Fight Club: concepto de experiencia digital para una escuela de boxeo. Un proyecto de diseño UX/UI y dirección visual.">
-<title>NEXO Fight Club — Boxeo con método</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{color-scheme:dark;--ink:#111110;--panel:#1d1d1b;--paper:#f2f0e9;--muted:#b9b7b0;--red:#ee3d38;--line:#585854}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--ink);color:var(--paper);font:16px/1.55 "DM Sans",Arial,sans-serif}a{color:inherit}button{font:inherit}img{display:block;width:100%;height:100%;object-fit:cover}::selection{background:var(--red);color:white}
-.skip{position:absolute;top:-100px;left:12px;z-index:200;background:white;color:#111;padding:12px}.skip:focus{top:12px}
-.wrap{width:min(100% - 48px,1320px);margin:auto}.eyebrow{font:700 13px/1.2 "DM Sans",sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--red)}.display,.section-title,h2,h3,.brand,.nav a,.button,.stat strong{font-family:"Barlow Condensed",Impact,sans-serif;text-transform:uppercase;line-height:.91}.section-title{font-size:clamp(3.5rem,8vw,8rem);letter-spacing:-.02em;margin:0}.section-intro{max-width:620px;color:var(--muted);font-size:clamp(1rem,1.6vw,1.25rem)}.button{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:12px 25px;background:var(--red);border:2px solid var(--red);color:white;text-decoration:none;font-size:1.25rem;font-weight:800;letter-spacing:.035em;transition:background .2s,color .2s,transform .2s}.button:hover{background:white;border-color:white;color:var(--ink);transform:translateY(-2px)}.button.secondary{background:transparent;border-color:var(--paper)}.button.secondary:hover{background:var(--paper)}:focus-visible{outline:3px solid #fff;outline-offset:4px}
-header{position:sticky;top:0;z-index:100;background:rgba(17,17,16,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}.head{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{text-decoration:none;font-size:1.8rem;font-weight:900;letter-spacing:-.025em;white-space:nowrap}.brand b{color:var(--red)}.nav{display:flex;align-items:center;gap:32px}.nav a{font-size:1.2rem;font-weight:700;text-decoration:none}.nav a:hover{color:var(--red)}.nav .nav-action{color:var(--red)}.menu-toggle{display:none;background:none;color:white;border:1px solid var(--line);padding:8px 12px;cursor:pointer}
-.demo{background:#262621;color:#ddd9cd;font-size:.75rem;letter-spacing:.06em;text-align:center;padding:9px 20px;border-bottom:1px solid #444}.demo strong{color:white}
-.hero{min-height:min(850px,calc(100svh - 112px));position:relative;display:flex;align-items:end;overflow:hidden;border-bottom:1px solid var(--line)}.hero-image{position:absolute;inset:0}.hero-image img{filter:grayscale(1) contrast(1.16);object-position:50% 44%}.hero-image:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,17,16,.84),rgba(17,17,16,.14) 72%),linear-gradient(0deg,#111110 0%,transparent 65%)}.hero-content{position:relative;padding:120px 0 88px}.hero .eyebrow{color:#ff6860}.display{font-size:clamp(5rem,13.5vw,13.5rem);letter-spacing:-.045em;margin:18px 0 24px;font-weight:900;max-width:1100px}.display em{font-style:normal;color:var(--red)}.hero-copy{font-size:clamp(1.1rem,2vw,1.45rem);max-width:550px;margin:0 0 36px}.actions{display:flex;gap:12px;flex-wrap:wrap}.hero-bottom{display:flex;gap:18px;align-items:center;color:#d7d4cb;margin-top:72px;text-transform:uppercase;font-size:.73rem;letter-spacing:.18em}.hero-bottom:before{content:"";width:48px;height:2px;background:var(--red)}
-.section{padding:clamp(80px,10vw,150px) 0;border-bottom:1px solid var(--line)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:32px;margin-bottom:50px}.section-head .section-intro{margin:0 0 7px}.number{color:var(--red);font:700 14px "DM Sans",sans-serif;letter-spacing:.16em;display:block;margin-bottom:20px}
-.paths{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);border:1px solid var(--line)}.path{background:var(--panel);padding:clamp(25px,3vw,48px);min-height:360px;display:flex;flex-direction:column}.path:hover{background:#292925}.path-index{color:var(--red);font-size:.85rem;letter-spacing:.12em}.path h3{font-size:clamp(2.8rem,4vw,4.8rem);margin:auto 0 16px}.path p{color:var(--muted);margin:0}.path .tag{display:block;margin-top:26px;padding-top:14px;border-top:1px solid var(--line);text-transform:uppercase;font-size:.72rem;letter-spacing:.13em}
-.method{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,100px);align-items:center}.method-image{height:620px;position:relative}.method-image img{filter:grayscale(1);object-position:center}.method-image:after{content:"";position:absolute;inset:0;border:12px solid transparent;border-left-color:var(--red);pointer-events:none}.method-copy .section-title{margin-bottom:28px}.method-copy>p{color:var(--muted);max-width:560px}.steps{margin-top:40px}.step{display:grid;grid-template-columns:58px 1fr;gap:16px;padding:19px 0;border-top:1px solid var(--line)}.step span{color:var(--red);font-weight:700}.step h3{font-size:1.8rem;margin:0 0 5px}.step p{margin:0;color:var(--muted);font-size:.94rem}
-.statement{background:var(--red);color:#151513;overflow:hidden}.statement .wrap{padding:clamp(70px,8vw,125px) 0}.statement p{font:900 clamp(4rem,11vw,11rem)/.88 "Barlow Condensed",Impact,sans-serif;text-transform:uppercase;letter-spacing:-.03em;margin:0;max-width:1150px}.statement span{color:white}
-.experience{display:grid;grid-template-columns:1.15fr .85fr;gap:24px}.experience-photo{height:550px}.experience-photo img{filter:grayscale(1)}.experience-copy{background:var(--panel);padding:clamp(30px,5vw,75px);display:flex;flex-direction:column;justify-content:center}.experience-copy h3{font-size:clamp(3.5rem,6vw,6.5rem);margin:0 0 22px}.experience-copy p{color:var(--muted);max-width:420px}.experience-copy ul{padding:0;list-style:none;margin:24px 0 0}.experience-copy li{border-top:1px solid var(--line);padding:13px 0}.experience-copy li:before{content:"+";color:var(--red);font-weight:700;margin-right:14px}
-.faq{max-width:940px;margin:0 auto}.faq .section-title{margin-bottom:35px}.faq details{border-top:1px solid var(--line);padding:23px 0}.faq details:last-child{border-bottom:1px solid var(--line)}.faq summary{cursor:pointer;font:700 1.8rem "Barlow Condensed",Impact,sans-serif;text-transform:uppercase;list-style:none;display:flex;justify-content:space-between;gap:16px}.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:"+";color:var(--red)}.faq details[open] summary:after{content:"−"}.faq details p{color:var(--muted);max-width:710px;margin:13px 0 0}
-.end{background:var(--paper);color:var(--ink);padding:clamp(85px,10vw,150px) 0}.end .section-title{max-width:1000px;margin:20px 0 25px}.end p{font-size:1.2rem;max-width:610px;margin:0 0 36px}.end .button:hover{background:#111;color:#fff;border-color:#111}.end .eyebrow{color:#b62020}
-footer{padding:44px 0;color:var(--muted)}footer .wrap{display:flex;justify-content:space-between;gap:24px;align-items:center}footer a:hover{color:white}footer p{margin:0;font-size:.84rem}
-@media(max-width:850px){.wrap{width:min(100% - 32px,1320px)}.head{height:68px}.menu-toggle{display:block}.nav{display:none;position:absolute;left:0;right:0;top:68px;background:var(--ink);padding:16px;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}.nav.open{display:flex}.nav a{padding:13px 6px;border-bottom:1px solid var(--line)}.hero{min-height:680px}.hero-image:after{background:linear-gradient(0deg,#111 0%,rgba(17,17,16,.2) 100%)}.hero-content{padding:95px 0 60px}.display{font-size:clamp(5rem,18vw,9rem)}.hero-bottom{margin-top:55px}.paths{grid-template-columns:1fr}.path{min-height:265px}.path h3{margin:35px 0 12px}.method{grid-template-columns:1fr}.method-image{height:440px;order:2}.experience{grid-template-columns:1fr}.experience-photo{height:390px}.section-head{display:block}.section-head .section-intro{margin-top:20px}footer .wrap{align-items:start;flex-direction:column}}
-@media(max-width:480px){.brand{font-size:1.55rem}.display{font-size:clamp(4.4rem,18vw,6.5rem)}.hero{min-height:650px}.actions{flex-direction:column}.actions .button{width:100%}.hero-copy{font-size:1.05rem}.section-title{font-size:clamp(3.7rem,16vw,5rem)}.method-image{height:340px}.experience-photo{height:300px}.statement p{font-size:clamp(4rem,15vw,6rem)}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#131313">
+  <meta name="description" content="NEXO Fight Club. Una landing conceptual para una escuela de boxeo en Buenos Aires. Diseño UX/UI, contenido y dirección visual por Studio V.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NEXO Fight Club | Disciplina de verdad">
+  <meta property="og:description" content="Un proyecto conceptual de diseño UX/UI y dirección visual por Studio V.">
+  <meta property="og:image" content="https://8b75e929-nexo-fight-club.netlify.app/nexo-hero.jpg">
+  <meta property="og:image:width" content="1376">
+  <meta property="og:image:height" content="768">
+  <title>NEXO Fight Club | Disciplina de verdad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Hanken+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
-<a class="skip" href="#contenido">Saltar al contenido</a>
-<header><div class="wrap head"><a class="brand" href="#inicio" aria-label="NEXO Fight Club, volver al inicio">NEXO <b>FIGHT CLUB</b></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navegacion" aria-label="Abrir menú">☰</button><nav id="navegacion" class="nav" aria-label="Navegación principal"><a href="#para-vos">Para vos</a><a href="#metodo">Método</a><a href="#experiencia">Experiencia</a><a class="nav-action" href="#proyecto">El proyecto ↗</a></nav></div></header>
-<div class="demo"><strong>PROYECTO CONCEPTUAL</strong> · Diseño de experiencia y dirección visual · Información ilustrativa</div>
-<main id="contenido">
-<section id="inicio" class="hero" aria-labelledby="hero-title"><div class="hero-image"><img src="hero.png" alt="Interior de un espacio de entrenamiento de boxeo" fetchpriority="high"></div><div class="wrap hero-content"><div class="eyebrow">Boxeo con método / Buenos Aires</div><h1 id="hero-title" class="display">EL RING<br>EMPIEZA <em>ACÁ.</em></h1><p class="hero-copy">Una escuela de boxeo pensada para aprender la técnica, construir confianza y encontrar tu propio ritmo.</p><div class="actions"><a class="button" href="#para-vos">Encontrá tu camino <span aria-hidden="true">&nbsp;↗</span></a><a class="button secondary" href="#metodo">Conocé el método</a></div><div class="hero-bottom">Empezar de cero también es empezar en serio</div></div></section>
-<section id="para-vos" class="section"><div class="wrap"><span class="number">01 / TU PUNTO DE PARTIDA</span><div class="section-head"><h2 class="section-title">HAY UN LUGAR<br>PARA VOS.</h2><p class="section-intro">Tres objetivos diferentes. Una misma base: aprender a boxear con criterio, sin atajos ni exigencias fuera de lugar.</p></div><div class="paths"><article class="path"><span class="path-index">01 — COMENZAR</span><h3>DESDE CERO</h3><p>No necesitás saber pegar. Empezás por postura, coordinación y desplazamiento.</p><span class="tag">Tu primer paso cuenta</span></article><article class="path"><span class="path-index">02 — PROGRESAR</span><h3>ENTRENAR MEJOR</h3><p>Profundizá en la técnica y desarrollá fuerza, resistencia y constancia.</p><span class="tag">Técnica antes que velocidad</span></article><article class="path"><span class="path-index">03 — DESAFIARTE</span><h3>IR MÁS LEJOS</h3><p>Un camino de preparación más exigente para quienes quieran explorar el boxeo competitivo.</p><span class="tag">A tu ritmo y con preparación</span></article></div></div></section>
-<section id="metodo" class="section"><div class="wrap method"><div class="method-copy"><span class="number">02 / EL MÉTODO</span><h2 class="section-title">CADA GOLPE<br>TIENE UNA BASE.</h2><p>No se trata de entrar al ring el primer día. La propuesta organiza el aprendizaje en etapas claras para que cada persona sepa dónde está y qué viene después.</p><div class="steps"><div class="step"><span>01</span><div><h3>FUNDAMENTOS</h3><p>Postura, guardia, desplazamientos y golpes básicos.</p></div></div><div class="step"><span>02</span><div><h3>CONDICIÓN</h3><p>Preparación física integrada al trabajo técnico.</p></div></div><div class="step"><span>03</span><div><h3>APLICACIÓN</h3><p>Práctica progresiva y acompañada según la experiencia.</p></div></div></div></div><div class="method-image"><img src="prep.png" alt="Preparación de vendas de boxeo antes de entrenar" loading="lazy"></div></div></section>
-<section class="statement" aria-label="Filosofía de entrenamiento"><div class="wrap"><p>PRIMERO<br>APRENDÉS.<br><span>DESPUÉS, PEGÁS.</span></p></div></section>
-<section id="experiencia" class="section"><div class="wrap"><span class="number">03 / LA EXPERIENCIA</span><div class="section-head"><h2 class="section-title">MÁS QUE<br>ENTRENAR.</h2><p class="section-intro">Una identidad para una comunidad que entiende el boxeo como práctica, aprendizaje y encuentro.</p></div><div class="experience"><div class="experience-photo"><img src="ring fight.png" alt="Dos boxeadores entrenando en un ring" loading="lazy"></div><div class="experience-copy"><h3>VENÍ COMO SOS.<br>CRECÉ A TU RITMO.</h3><p>El concepto de NEXO busca hacer visible una experiencia intensa, pero accesible para quien recién empieza.</p><ul><li>Un recorrido claro para principiantes</li><li>Una identidad visual con carácter</li><li>Un próximo paso fácil de encontrar</li></ul></div></div></div></section>
-<section class="section"><div class="wrap faq"><span class="number">04 / ANTES DE EMPEZAR</span><h2 class="section-title">PREGUNTAS<br>FRECUENTES.</h2><details><summary>¿Necesito experiencia previa?</summary><p>El recorrido inicial de este concepto está pensado para personas que empiezan desde cero.</p></details><details><summary>¿Tengo que querer competir?</summary><p>No. La propuesta distingue distintos objetivos: aprender, entrenar y, si te interesa, avanzar hacia una preparación competitiva.</p></details><details><summary>¿Dónde veo los horarios y precios?</summary><p>Esta web es un prototipo de portfolio. No publica horarios, precios ni reservas reales de un gimnasio.</p></details></div></section>
-<section id="proyecto" class="end"><div class="wrap"><span class="eyebrow">Caso de estudio / Diseño UX/UI</span><h2 class="section-title">UN CONCEPTO QUE<br>SE SIENTE REAL.</h2><p>NEXO Fight Club es una propuesta conceptual de sitio web. Explora cómo comunicar una escuela de boxeo con claridad, personalidad y un recorrido pensado para quien llega por primera vez.</p><a class="button" href="https://github.com/vicpiatig-bit/8b75e929-nexo-fight-club#readme" target="_blank" rel="noopener noreferrer">Ver el caso de estudio ↗</a></div></section>
-</main>
-<footer><div class="wrap"><a class="brand" href="#inicio">NEXO <b>FIGHT CLUB</b></a><p>Proyecto conceptual de portfolio · No representa un gimnasio operativo.</p><a href="#inicio">Volver arriba ↑</a></div></footer>
-<script>
-const toggle=document.querySelector(".menu-toggle"),nav=document.querySelector(".nav");
-toggle.addEventListener("click",()=>{const open=toggle.getAttribute("aria-expanded")!=="true";toggle.setAttribute("aria-expanded",String(open));toggle.setAttribute("aria-label",open?"Cerrar menú":"Abrir menú");toggle.textContent=open?"✕":"☰";nav.classList.toggle("open",open)});
-nav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{nav.classList.remove("open");toggle.setAttribute("aria-expanded","false");toggle.setAttribute("aria-label","Abrir menú");toggle.textContent="☰"}));
-</script>
-</body></html>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#inicio">NEXO FIGHT CLUB</a>
+      <button class="menu-toggle" hidden type="button" aria-controls="navegacion" aria-expanded="false">Menú</button>
+      <nav class="nav" id="navegacion" aria-label="Navegación principal">
+        <a href="#metodo">Método</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#escuela">Escuela</a>
+        <a href="#ubicacion">Ubicación</a>
+      </nav>
+      <a class="button header-cta" href="#clase" data-trial>Probar una clase</a>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <section class="hero" id="inicio" aria-labelledby="titulo">
+      <img class="hero-photo" src="nexo-hero.jpg" width="1376" height="768" alt="" fetchpriority="high">
+      <div class="wrap hero-content">
+        <p class="eyebrow hero-kicker">Boxeo en Buenos Aires <span>Proyecto conceptual</span></p>
+        <h1 id="titulo">Disciplina de verdad.<br>Sin vueltas.</h1>
+        <p class="hero-copy">Boxeo en serio, desde cero o para competir. Técnica, preparación física y una escuela que respeta el oficio.</p>
+        <div class="actions">
+          <a class="button" href="#clase" data-trial>Probar una clase</a>
+          <a class="button button-secondary" href="#horarios">Ver horarios</a>
+        </div>
+        <p class="hero-location">Villa Crespo, CABA</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="objetivos">
+      <div class="wrap">
+        <h2 id="objetivos">¿Qué buscás?</h2>
+        <div class="goals">
+          <article class="goal">
+            <span class="goal-number" aria-hidden="true">01</span>
+            <h3>Empezar de cero</h3>
+            <p>No necesitás experiencia. Aprendés desde la base técnica, paso a paso.</p>
+          </article>
+          <article class="goal">
+            <span class="goal-number" aria-hidden="true">02</span>
+            <h3>Entrenar en serio</h3>
+            <p>Mejorá tu técnica, ganá resistencia y construí una rutina de entrenamiento.</p>
+          </article>
+          <article class="goal">
+            <span class="goal-number" aria-hidden="true">03</span>
+            <h3>Competir</h3>
+            <p>Preparación específica para quienes quieren subir al ring.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="metodo" aria-labelledby="metodo-titulo">
+      <div class="wrap">
+        <h2 id="metodo-titulo">El método NEXO</h2>
+        <p class="section-note">Progresión técnica</p>
+        <div class="method-layout">
+          <ol class="steps">
+            <li><span aria-hidden="true">01</span><div><h3>Fundamentos</h3><p>Postura, guardia y desplazamientos. Aprendés a moverte y a coordinar los golpes básicos.</p></div></li>
+            <li><span aria-hidden="true">02</span><div><h3>Preparación</h3><p>Desarrollás la fuerza y la resistencia para sostener el entrenamiento.</p></div></li>
+            <li><span aria-hidden="true">03</span><div><h3>Sparring</h3><p>Cuando estás preparado, llevás lo aprendido a la práctica supervisada en el ring.</p></div></li>
+            <li><span aria-hidden="true">04</span><div><h3>Competencia</h3><p>Si querés competir, incorporás preparación táctica y un entrenamiento acorde a tu nivel.</p></div></li>
+          </ol>
+          <figure class="photo method-photo">
+            <img src="nexo-metodo.jpg" width="1024" height="1024" alt="Un boxeador recibe ayuda para vendarse las manos antes de entrenar" loading="lazy">
+            <figcaption>Primero técnica.<br><strong>Después intensidad.</strong></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="escuela" aria-labelledby="escuela-titulo">
+      <div class="wrap school-layout">
+        <div class="school-copy">
+          <h2 id="escuela-titulo">Una escuela<br>con historia</h2>
+          <p>La propuesta recupera la tradición del boxeo argentino. Técnica, respeto y trabajo constante en un espacio donde cada persona puede empezar a su ritmo.</p>
+        </div>
+        <figure class="photo school-photo">
+          <img src="nexo-historia.jpg" width="1024" height="1024" alt="Guantes de cuero y un cronómetro sobre la lona de un ring" loading="lazy">
+          <figcaption>El oficio y el espacio</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="horarios" aria-labelledby="horarios-titulo">
+      <div class="wrap">
+        <h2 id="horarios-titulo">Horarios</h2>
+        <p class="section-note" id="horarios-nota">Grilla ilustrativa · Clases de 90 minutos</p>
+        <p class="table-hint">Deslizá la grilla para ver toda la semana.</p>
+        <div class="schedule" role="region" aria-label="Grilla semanal de horarios ilustrativos" tabindex="0">
+          <table aria-describedby="horarios-nota">
+            <thead><tr><th scope="col">Hora</th><th scope="col">Lunes</th><th scope="col">Martes</th><th scope="col">Miércoles</th><th scope="col">Jueves</th><th scope="col">Viernes</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">08:00</th><td class="initial">Inicial</td><td>—</td><td class="initial">Inicial</td><td>—</td><td class="initial">Inicial</td></tr>
+              <tr><th scope="row">18:00</th><td>Avanzado</td><td class="initial">Inicial</td><td>Avanzado</td><td class="initial">Inicial</td><td>Avanzado</td></tr>
+              <tr><th scope="row">20:00</th><td class="advanced">Competencia</td><td>Avanzado</td><td class="advanced">Competencia</td><td>Avanzado</td><td class="advanced">Sparring libre</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="schedule-action">
+          <p>Para tu primera clase, traé ropa cómoda y agua.</p>
+          <a class="button" href="#clase" data-trial>Probar una clase</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section location" id="ubicacion" aria-labelledby="ubicacion-titulo">
+      <div class="wrap">
+        <h2 id="ubicacion-titulo">Villa Crespo, Buenos Aires</h2>
+        <p>En esta propuesta, NEXO imagina un club de barrio en el corazón de la ciudad.</p>
+        <div id="clase" class="actions location-actions">
+          <a class="button" href="#horarios" data-trial>Probar una clase</a>
+          <a class="button button-secondary" href="https://github.com/vicpiatig-bit/8b75e929-nexo-fight-club#readme">Ver el caso de estudio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="#inicio">NEXO FIGHT CLUB</a>
+      <p>Proyecto conceptual de portfolio · Diseño y dirección visual por Studio V.</p>
+      <a class="footer-top" href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <dialog class="trial" aria-labelledby="trial-title" aria-describedby="trial-note">
+    <div class="trial-head">
+      <p class="eyebrow">Demo de reserva</p>
+      <form method="dialog"><button type="submit" class="close" aria-label="Cerrar simulación">×</button></form>
+    </div>
+    <h2 id="trial-title">Probá una clase</h2>
+    <p id="trial-note">Elegí un turno de ejemplo para ver cómo sería el recorrido de reserva.</p>
+    <form class="trial-form">
+      <label for="turno">Turno inicial</label>
+      <select id="turno" required>
+        <option value="">Elegí un horario</option>
+        <option>Lunes a las 08:00</option>
+        <option>Martes a las 18:00</option>
+        <option>Miércoles a las 08:00</option>
+        <option>Jueves a las 18:00</option>
+        <option>Viernes a las 08:00</option>
+      </select>
+      <button class="button" type="submit">Simular reserva</button>
+    </form>
+    <p class="trial-result" role="status" tabindex="-1" hidden></p>
+  </dialog>
+</body>
+</html>
